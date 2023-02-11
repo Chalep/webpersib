@@ -1,0 +1,33 @@
+.content {
+    padding-top: 100px;
+}
+
+.container .textbox img {
+    position: relative;
+    align-items: center;
+}
+
+.content .textBox {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    flex: unset;
+    margin: auto;
+}
+
+.content {
+    display: block;
+}
+
+.textBox img {
+    width: 100%;
+    display: block;
+}
+
+@media (max-width:567px) {
+    .content {
+        padding-top: 70px;
+    }
+}

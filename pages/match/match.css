@@ -1,0 +1,373 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+html {
+    font-size: 20px;
+}
+
+/* varS */
+:root {
+    --main-bg-color: 0, 17, 119;
+    --main-color: 255, 255, 255;
+    --border-color: 0, 17, 119;
+}
+
+/* header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100px;
+
+    background-color: rgb(var(--main-bg-color));
+    color: rgb(var(--main-color));
+    border-color: 0, 17, 119;
+
+    padding: 0 0.5rem;
+}
+
+.header img {
+    width: 100px;
+    margin-right: 2rem;
+}
+
+/* bar navigasi */
+.navBar {
+    display: flex;
+
+    height: 30px;
+
+
+    background-color: rgb(var(--main-bg-color));
+    color: rgb(var(--main-color));
+
+    border-top: 1px solid rgb(var(--border-color));
+}
+
+.navBar .link {
+    background-color: rgb(var(--main-bg-color));
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-right: 1px solid rgb(var(--border-color));
+
+    padding: 0 0.25rem;
+    text-align: center;
+
+    font-size: 1.1rem;
+
+    cursor: pointer;
+}
+
+.navBar .link:hover,
+.navBar .link.active {
+    background-color: rgb(var(--main-color));
+    color: rgb(var(--main-bg-color));
+}
+
+/* Klasemen */
+.standings {
+    max-width: 1000px;
+    padding: 0.75rem;
+}
+
+.standings .group {
+    margin-bottom: 2rem;
+}
+
+.standings .group .group-title {
+    margin-bottom: 1rem;
+}
+
+.standings .group .row {
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+.standings .group .row .col {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.standings .group .row .main {
+    flex: 1;
+    justify-content: start;
+}
+
+.standings .group .top .col {
+    opacity: 0.6;
+}
+
+.standings .group .row {
+    flex: 1;
+    justify-content: start;
+}
+
+.standings .group .row .rank {
+    margin-right: 0 0.5rem;
+}
+
+.standings .group .teams .row:nth-child(1) {
+    border-left: 4px solid lightseagreen;
+}
+
+.standings .group .teams .row:nth-child(2) {
+    border-left: 4px solid orangered;
+}
+
+.flag {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(var(--main-color));
+    object-fit: contain;
+    margin-right: 0.5rem;
+    align-items: center;
+}
+
+/* 
+
+footer{
+    position: fixed;
+    bottom: 0;
+
+
+}
+.footer{
+    background-color: #040a18;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+.footer .footer-left, 
+.footer .footer-center,
+.footer .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+@media (max-height:800px) {
+    footer{
+        position: static;
+    }
+    header{
+        padding-top: 40px;
+    }
+}
+.footer .footer-left{
+    width: 30%;
+}
+
+.footer h3 {
+    color: #f5f5f5;
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer .footer-left img{
+    width: 50px;
+    padding-left: 1px;
+}
+.footer .footer-copyright{
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 10%;
+    
+}
+.footer .footer-center{
+    width: 35% ;
+}
+.footer .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+    font-size:  17px;
+    line-height: 38px;
+}
+
+.footer .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0px;
+}
+
+.footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+
+}
+.footer .footer-center p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer .footer-right{
+    width: 30%;
+}
+
+.footer .footer-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.footer .footer-center span {
+    display: block;
+    color: #ffffff;
+} */
+
+.klasemen {
+    margin: auto;
+    width: 1000px;
+}
+
+.list {
+    position: relative;
+    overflow: auto;
+    border: 1px solid black;
+    white-space: nowrap;
+}
+
+.sticky-col {
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: white;
+}
+
+.first-col {
+    width: 270px;
+    min-width: 100px;
+    max-width: 270px;
+    left: 0px;
+}
+
+.first-col .label {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+table {
+    width: 900px;
+    padding: 10px;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+}
+
+table tr {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+tbody tr:nth-child(1) .label {
+    position: relative;
+}
+
+tbody tr:nth-child(1) .label:after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    border-left: 4px solid lightseagreen;
+    width: 5px;
+    height: 100%;
+}
+tbody tr:nth-child(2) .label {
+    position: relative;
+}
+
+tbody tr:nth-child(2) .label:after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    border-left: 4px solid orangered;
+    width: 5px;
+    height: 100%;
+}
+
+@media (max-width:990px) {
+    .klasemen {
+        margin: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .name {
+        font-size: 14px;
+    }
+
+    img.flag {
+        width: 30px;
+        height: 30px;
+    }
+
+    .rank {
+        font-size: 12px;
+    }
+
+    td.col.sticky-col.first-col {
+        width: 170px !important;
+        min-width: 100px;
+        max-width: 170px !important;
+    }
+
+    td.col {
+        font-size: 14px;
+    }
+
+    table td {
+        font-size: 14px;
+    }
+
+    td.sticky-col.first-col {
+        font-size: 16px;
+    }
+
+    .first-col {
+        width: 200px;
+    }
+
+    .header img {
+        width: 60px;
+        margin-right: 15px;
+    }
+
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .navBar .link {
+        font-size: 16px;
+    }
+}
